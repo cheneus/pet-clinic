@@ -1,17 +1,15 @@
 package com.chen.petclinic.services;
 
 import com.chen.petclinic.models.Owner;
+import com.chen.petclinic.models.Vet;
 
 import java.util.Set;
 
-public interface OwnerService {
+public interface VetService {
 
+    Vet findById(Long id);
 
-    Owner findByLastName(String lastName);
+    Vet save(Vet vet);
 
-    Owner findById(Long id);
-
-    Owner save(Owner owner);
-
-    Set<Owner> findAll();
+    Set<Vet> findAll();
 }
