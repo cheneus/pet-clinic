@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.Set;
 
-public interface PetService extends CrudRepository {
+public interface PetService extends CrudService<Pet, Long> {
 
     Set<Pet> findAll();
 }
